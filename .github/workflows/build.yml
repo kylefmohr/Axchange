@@ -34,7 +34,7 @@ jobs:
         run: Scripts/BuildADB/make.sh
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: build-artifacts
           path: build/
