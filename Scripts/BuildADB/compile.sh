@@ -117,3 +117,12 @@ for ARCH in $ARCHS_LIST; do
 
     DELIVERED_PREFIXS+=("$PREFIX_DIR")
 done
+
+# Install dependencies using brew
+brew install cmake ninja
+
+# Install xcodegen using brew
+brew install xcodegen
+
+# Generate the Xcode project using xcodegen
+xcodegen generate
